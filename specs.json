@@ -1,0 +1,98 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Deno Server",
+    "description": "Deno Server API Specifications",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://127.0.0.1:4000/api/v1"
+    }
+  ],
+  "paths": {
+    "/todos": {
+      "description": "Todo APIs",
+      "summary": "Todo APIS",
+      "get": {
+        "summary": "Get All Todos",
+        "description": "Get ALl Todos",
+        "tags": [
+          "Todo API"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success get all todos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "number"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Todo"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create Todo",
+        "description": "Create Todo",
+        "tags": [
+          "Todo API"
+        ],
+        "responses": {
+          "201": {
+            "description": "Success Create Todo",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "number"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/Todo"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Todo": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "is_done": {
+            "type": "boolean",
+            "default": false
+          }
+        }
+      }
+    }
+  }
+}

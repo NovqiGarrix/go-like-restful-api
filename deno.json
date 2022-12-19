@@ -1,0 +1,9 @@
+{
+  "tasks": {
+    "dev": "deno run -A --watch main.ts",
+    "prisma:push": "deno run -A --unstable npm:prisma@^4.7.1 db push",
+    "prisma:proxy": "deno run -A --unstable npm:prisma@^4.7.1 generate --data-proxy",
+    "prisma:migrate": "deno run -A --unstable npm:prisma@^4.7.1 migrate dev"
+  },
+  "importMap": "import_map.json"
+}

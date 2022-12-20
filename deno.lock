@@ -81,10 +81,12 @@
     "https://deno.land/std@0.154.0/testing/_diff.ts": "141f978a283defc367eeee3ff7b58aa8763cf7c8e0c585132eae614468e9d7b8",
     "https://deno.land/std@0.154.0/testing/_format.ts": "cd11136e1797791045e639e9f0f4640d5b4166148796cad37e6ef75f7d7f3832",
     "https://deno.land/std@0.154.0/testing/asserts.ts": "ac295f7fd22a7af107580e2475402a8c386cb1bf18bf837ae266ac0665786026",
-    "https://deno.land/std@0.168.0/fmt/colors.ts": "03ad95e543d2808bc43c17a3dd29d25b43d0f16287fe562a0be89bf632454a12",
-    "https://deno.land/std@0.168.0/testing/_diff.ts": "a23e7fc2b4d8daa3e158fa06856bedf5334ce2a2831e8bf9e509717f455adb2c",
-    "https://deno.land/std@0.168.0/testing/_format.ts": "cd11136e1797791045e639e9f0f4640d5b4166148796cad37e6ef75f7d7f3832",
-    "https://deno.land/std@0.168.0/testing/asserts.ts": "51353e79437361d4b02d8e32f3fc83b22231bc8f8d4c841d86fd32b0b0afe940",
+    "https://deno.land/std@0.170.0/fmt/colors.ts": "03ad95e543d2808bc43c17a3dd29d25b43d0f16287fe562a0be89bf632454a12",
+    "https://deno.land/std@0.170.0/testing/_diff.ts": "a23e7fc2b4d8daa3e158fa06856bedf5334ce2a2831e8bf9e509717f455adb2c",
+    "https://deno.land/std@0.170.0/testing/_format.ts": "cd11136e1797791045e639e9f0f4640d5b4166148796cad37e6ef75f7d7f3832",
+    "https://deno.land/std@0.170.0/testing/_test_suite.ts": "2d07073d5460a4e3ec50c55ae822cd9bd136926d7363091379947fef9c73c3e4",
+    "https://deno.land/std@0.170.0/testing/asserts.ts": "51353e79437361d4b02d8e32f3fc83b22231bc8f8d4c841d86fd32b0b0afe940",
+    "https://deno.land/std@0.170.0/testing/bdd.ts": "9c2cd8473968e14fa8fe29f261c607aac0350ab5a63bc4f5650b8d1554372c5f",
     "https://deno.land/std@0.97.0/fmt/colors.ts": "db22b314a2ae9430ae7460ce005e0a7130e23ae1c999157e3bb77cf55800f7e4",
     "https://deno.land/std@0.97.0/testing/_diff.ts": "961eaf6d9f5b0a8556c9d835bbc6fa74f5addd7d3b02728ba7936ff93364f7a3",
     "https://deno.land/std@0.97.0/testing/asserts.ts": "341292d12eebc44be4c3c2ca101ba8b6b5859cef2fa69d50c217f9d0bfbcfd1f",
@@ -261,24 +263,11 @@
     "https://jspm.dev/npm:superagent@6.1.0/lib/response-base!cjs": "00ac549f34d73c2753caa798aa7eb781051179013e3418ff0868a1e1904a8913",
     "https://jspm.dev/npm:superagent@6.1.0/lib/utils!cjs": "ea706523553983c96ef4ab2f191c61c53fb8b78ad8ff2472b48f1385e896c030",
     "https://jspm.dev/superagent@6.1.0": "4b3082d71252c42abd3930d85d1f3c4b2e937e0fab2b5f1c9d19eac20dea89a9",
-    "https://raw.githubusercontent.com/NovqiGarrix/novo/main/deps.ts": "0670a67f4d05395eda63ab0d9b994de7cd21cd1467359cbf93a471da48ba4a83",
-    "https://raw.githubusercontent.com/NovqiGarrix/novo/main/mod.ts": "24f898f23fc1a4b91a7448a92e0e9b9e3aaac43421ffed833452dacbb2ce81a5",
-    "https://raw.githubusercontent.com/NovqiGarrix/novo/main/src/Connection.ts": "0eedff3e2558891855aea36ad8301be3825e146717c9589eed5feb2f0eb714db",
-    "https://raw.githubusercontent.com/NovqiGarrix/novo/main/src/Model.ts": "c8519922d7fafa4d774e2031a05f3b37e7c6c3a1b8445673a9a6fc0fbc24f22e",
-    "https://raw.githubusercontent.com/NovqiGarrix/novo/main/src/Novo.ts": "69b8b0114cb5d0f38870e8316eb0e43712b4f987d230adf6bc1fb368e85fb4e7",
-    "https://raw.githubusercontent.com/NovqiGarrix/novo/main/src/Query.ts": "9c79aff4817820bc0357c693d37397cd4bd39d97a6c87b49c71d116bd4e9686e"
-  },
-  "npm": {
-    "specifiers": { "prisma@^4.7.1": "prisma@4.7.1" },
-    "packages": {
-      "@prisma/engines@4.7.1": {
-        "integrity": "sha512-zWabHosTdLpXXlMefHmnouhXMoTB1+SCbUU3t4FCmdrtIOZcarPKU3Alto7gm/pZ9vHlGOXHCfVZ1G7OIrSbog==",
-        "dependencies": {}
-      },
-      "prisma@4.7.1": {
-        "integrity": "sha512-CCQP+m+1qZOGIZlvnL6T3ZwaU0LAleIHYFPN9tFSzjs/KL6vH9rlYbGOkTuG9Q1s6Ki5D0LJlYlW18Z9EBUpGg==",
-        "dependencies": { "@prisma/engines": "@prisma/engines@4.7.1" }
-      }
-    }
+    "https://raw.githubusercontent.com/NovqiGarrix/novo/main/deps.ts": "af8830a77bd8d5802ac834fbefd62b72e2c49e3b02e0ecccb2a279dcab56cfe2",
+    "https://raw.githubusercontent.com/NovqiGarrix/novo/main/mod.ts": "295a3a633cb04531a14c130ca27cf24445c55be4fcce8743c4c7063f258ae7fe",
+    "https://raw.githubusercontent.com/NovqiGarrix/novo/main/src/Connection.ts": "77ad5c879c911e2c8f12b200d0dadb4f1359e8a0b32a6b058995f1cb9a632fdf",
+    "https://raw.githubusercontent.com/NovqiGarrix/novo/main/src/Model.ts": "ab5e9ca194443d046d5f988fe194e8ee99433883478fb62fa0e10affbc3005dd",
+    "https://raw.githubusercontent.com/NovqiGarrix/novo/main/src/Novo.ts": "136ade219604f5ad021de45910f319da892e510581c5a860c3baca46921c801c",
+    "https://raw.githubusercontent.com/NovqiGarrix/novo/main/src/Query.ts": "0766fdba57e3cc6c6825d03e3a69dbdc6d48888e8f19dc44b56c0e3249a64208"
   }
 }

@@ -1,15 +1,20 @@
-// deno-lint-ignore-file no-explicit-any
+import createServer from "@app";
 import type { RouteParams, RouterContext } from "@deps";
 
 export interface FormError {
-  field: string;
-  message: string;
+    field: string;
+    message: string;
 }
 
+type ApplicationWithStateType = ReturnType<typeof createServer>;
+
+// Get the state type from the application
+type ApplicationState = ApplicationWithStateType["state"];
+
 export type OakContext<R extends string> = RouterContext<
-  R,
-  RouteParams<R>,
-  Record<string, any>
+    R,
+    RouteParams<R>,
+    ApplicationState
 >;
 
 export type NextFunction<T> = () => Promise<T>;

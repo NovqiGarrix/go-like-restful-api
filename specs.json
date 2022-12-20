@@ -90,6 +90,12 @@
           "is_done": {
             "type": "boolean",
             "default": false
+          },
+          "createdAt": {
+            "type": "number"
+          },
+          "updatedAt": {
+            "type": "number"
           }
         }
       }

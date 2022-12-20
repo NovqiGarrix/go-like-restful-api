@@ -5,31 +5,31 @@ import V1 from "@routes/v1.ts";
 import logAndErrorHandler from "@middlewares/logAndErrorHandler.ts";
 
 export default function createServer() {
-  const CORS_ORIGIN = Deno.env.get("CORS_ORIGIN")!;
+    const CORS_ORIGIN = Deno.env.get("CORS_ORIGIN")!;
 
-  const app = new Application();
-  const router = new Router();
+    const app = new Application({ contextState: "alias" });
+    const router = new Router();
 
-  app.use(oakCors({
-    credentials: true,
-    methods: "*",
-    origin: [CORS_ORIGIN],
-    preflightContinue: true,
-  }));
+    app.use(oakCors({
+        credentials: true,
+        methods: "*",
+        origin: [CORS_ORIGIN],
+        preflightContinue: true,
+    }));
 
-  // Logger
-  app.use(logAndErrorHandler);
+    // Logger
+    app.use(logAndErrorHandler);
 
-  router.get("/", ({ response }) => {
-    response.status = 200;
-    response.body = {
-      data: "Main Endpoint",
-      error: null,
-    };
-  }).use("/api", V1);
+    router.get("/", ({ response }) => {
+        response.status = 200;
+        response.body = {
+            data: "Main Endpoint",
+            error: null,
+        };
+    }).use("/api", V1);
 
-  app.use(router.routes());
-  app.use(router.allowedMethods());
+    app.use(router.routes());
+    app.use(router.allowedMethods());
 
-  return app;
+    return app;
 }

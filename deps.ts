@@ -38,5 +38,4 @@ export { default as dayjs } from "https://deno.land/x/deno_dayjs@v0.2.1/mod.ts";
 // Colors
 export { red } from "https://deno.land/std@0.152.0/fmt/colors.ts";
 
-// Novo (ORM) for MongoDB
-export { novo } from "https://raw.githubusercontent.com/NovqiGarrix/novo/main/mod.ts";
+export * from 'https://raw.githubusercontent.com/NovqiGarrix/novo/main/mod.ts';

@@ -1,18 +1,30 @@
-import { novo } from "@deps";
+import { novo, ObjectId } from "@deps";
 
 export interface ITodo {
-  _id: string;
+    _id: ObjectId;
 
-  title: string;
+    title: string;
 
-  description: string;
+    description: string;
 
-  isDone: boolean;
+    isDone: boolean;
 
-  createdAt: Date;
+    createdAt: Date;
 
-  updatedAt: Date;
+    updatedAt: Date;
 }
 
-const TodoModel = novo.model<ITodo>("todos");
-export default TodoModel;
+export interface ConvertedTodo {
+    _id: string;
+    createdAt: number;
+    updatedAt: number;
+    title: string;
+    description: string;
+    isDone: boolean;
+}
+
+export type ITodoModel = ReturnType<typeof createTodoModel>;
+
+const createTodoModel = () => novo.model<ITodo>("todos");
+
+export default createTodoModel;
